@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+        <link rel="stylesheet" href="asset/Images/AFPAsite.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <img src="asset/Images/logo.jpeg" alt="Logo de l'AFPA" width="200" height="100">
+        <a href="index.html">Accueil</a>
+        <a href="formation.html">Formation</a>
+        <a href="temoignages.html">Témoignages</a>
+        <a href="references.html">Références</a>
+        <a href="Contact.html">Contact</a>
+
+     </nav>
+    </header>
+    <main>
+        <H1>Contactez-nous</H1>
+        <section>
+          <p>Nom prénom<input
+          id="nomprénom" name="nomprénom"
+          type="text"
+          placeholder="Votre nom et prénom">
+          </p>
+          <p>Adresse email<input
+            id="adresseemail" name="adresseemail"
+            type="text"
+            placeholder="Votre adresse Email">
+          </p>
+
+          </p>
+          <p>Téléphone<input
+            id="Téléphone" name="téléphone"
+            type="text"
+            placeholder="Votre numéro de téléphone">
+
+          </p>
+          <p>Vous êtes ?<input
+            id="situation" name="situation"
+            type="radio"><label for="situation">Demandeur d'emploi</label>
+            <input id="situation2" name="situation2"
+            type="radio"><label for="situation2">Salarié en transition pro</label>
+            <input id="situation3" name="situation3"
+            type="radio"><label for="situation3">Autre</label>
+            
+
+          </p>
+          <p>Vos Modalités préférés ?<input
+            id="modalités" name="modalités"
+            type="radio"><label for="modalités">Formation en présentiel</label>
+            <input id="modalités2" name="Modalités2"
+            type="radio"><label for="Modalités2">100% à distance</label>
+            <input id="modalités3" name="Modalités3"
+            type="radio"><label for="Modalités3">Alternance</label>
+            <input id="Modalités4" name="modalités4"
+            type="radio"><label for="modalités4">Pas de préférence</label>
+
+          </p>
+          <p>Vous êtes résident de <select name="région">
+            <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+            <option value="Bretagne">Bretagne</option>
+            <option value="Vendée">Vendée</option>
+          </select>
+
+          </p>
+          <button name="validation" type="button">Envoyer</button>
+          <textarea>Votre message</textarea>
+        </section>
+    </main>
+    
+</body>
+</html>
