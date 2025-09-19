@@ -1,6 +1,6 @@
 @import "/asset/Images/typographie.css";
 
-*{
+* {
     font-family: "Gotham", sans-serif;
 }
 
@@ -11,17 +11,29 @@ header nav {
     align-items: center;
     justify-content: space-between;
 }
+
 header img {
     height: 8vh;
     width: auto;
+    border-radius: 7%;
 }
+
+nav img {
+    display: flex;
+    position: relative;
+    left: 10px;
+}
+
 nav {
     margin: 0;
     height: 100%;
+    background-color: rgb(221, 224, 219);
 }
+
 main {
     min-height: 80vh;
 }
+
 .menu {
     list-style: none;
     margin: 0;
@@ -30,29 +42,35 @@ main {
     align-items: center;
     height: 100%;
 }
+
 .menu li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
 }
-.menu li a{
+
+.menu li a {
     text-decoration: none;
     color: black;
 }
-.menu li:hover{
+
+.menu li:hover {
     background-color: rgb(26, 180, 26);
     cursor: pointer;
+    border-radius: 50%;
 }
-.menu li:hover a{
+
+.menu li:hover a {
     color: aliceblue;
 }
-.presentation{
+
+.presentation {
     background-image: url(../Images/A2-1920.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 80vh;
     color: honeydew;
     padding: 10px 50% 10px 10px;
     display: flex;
@@ -60,9 +78,10 @@ main {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    
+
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: aqua;
@@ -73,15 +92,105 @@ main {
     font-weight: bold;
     transition: background-color 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: aquamarine;
 }
+
 footer {
-    height: 10vh;
-    background-color: rgb(5, 224, 151);
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 
+footer>h1 {
+    font-size: 20px;
+}
+
+.bloctemoignages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card1 {
+    background: linear-gradient(#4CAF50, #7FA576);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1%;
+    box-shadow: 0 2px 5px;
+}
+
+.card1 img {
+    width: 35%;
+    height: auto;
+    display: flex;
+    border-radius: 10%;
+}
+
+.card1>p {
+    font-style: italic;
+}
+
+.card1>h2 {
+    text-decoration: underline;
+}
+
+.card1>h2 {
+    font-weight: bold;
+    color: rgb(37, 59, 52);
+}
+
+.formation1 {
+    background-color: rgb(19, 153, 19);
+    display: flex;
+    text-align: center;
+    width: 20%;
+}
+
+.formation1>p {
+    font-style: italic;
+}
+
+.blocformation {
+    background-color: aqua;
+    display: flex;
+}
+
+.reference {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.form {
+    background: linear-gradient(#4CAF50, #7FA576);
+    padding: 1%;
+    border-radius: 1%;
+}
+
+@media screen and (max-width:650px) {
+    .bloctemoignages {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card1 {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
